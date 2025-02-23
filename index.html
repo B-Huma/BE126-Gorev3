@@ -131,10 +131,8 @@
 
     <script>
         document.querySelectorAll('.foto').forEach(img => {
-            img.addEventListener('click', function () {
-                // Modal içindeki fotoğrafın src'sini güncelle
-                document.getElementById('modalFoto').src = this.src;
-                // data-title attribute değeri varsa modal başlığını güncelle
+            img.addEventListener('click', function () {                
+                document.getElementById('modalFoto').src = this.src;                
                 let title = this.getAttribute('data-title');
                 if (title) {
                     document.getElementById('fotoModalLabel').textContent = title;
